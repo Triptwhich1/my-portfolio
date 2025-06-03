@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+}
+
+body, html, h1, h2, h3, h4, h5, h6, p, span, div, li, a, label, input, button, textarea, select {
+    color: var(--text-color);
+}
+
+/* ACTUAL CSS FOR THE WEBPAGE */
+
+:root{
+    --bg-color: #2A2525;
+    --lighter-bg-color: #2F2A2A;
+    --text-color: #FFFFFF;
+    --title-text-size: 4rem;
+    --title-description: 2.4rem;
+    /* --hover-color: #; */
+}
+
+body {
+    background-color: var(--bg-color);
+    margin-left: 10rem;
+}
+
+.title {
+    margin-top: 4rem;
+    display: flex;
+    align-items: baseline;
+}
+
+.title h1 {
+    font-size: var(--title-text-size);
+}
+
+.title p {
+    margin-left: 2.4rem;
+    font-size: var(--title-description);
+}
