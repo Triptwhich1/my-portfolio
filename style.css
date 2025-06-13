@@ -77,3 +77,47 @@ body {
 .description p{
     font-size: 2.4rem;
 }
+
+/* Projects Section */
+
+.projects {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    width: 85vw; 
+    height: 170vh;
+    /* background-color: red; */
+}
+
+.project-section-title {
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.project {
+    margin-top: 1rem;
+    padding: 2rem 2.5rem;
+    background-color: var(--lighter-bg-color);
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.3);
+}
+
+.title-year {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project-name {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.year {
+    margin-left: 2.4rem;
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.project-description {
+    font-size: 1.6rem;
+}
