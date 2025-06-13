@@ -85,7 +85,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 85vw; 
-    height: 170vh;
+    height: 100vh;
     /* background-color: red; */
 }
 
@@ -99,6 +99,16 @@ body {
     padding: 2rem 2.5rem;
     background-color: var(--lighter-bg-color);
     box-shadow: 0 4px 16px 0 rgba(0,0,0,0.3);
+    min-height: 20vh;
+}
+
+.project-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-top i {
+    align-items: end;
 }
 
 .title-year {
@@ -119,5 +129,6 @@ body {
 }
 
 .project-description {
+    margin-top: 1.4rem;
     font-size: 1.6rem;
 }
