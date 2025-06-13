@@ -16,3 +16,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// function handleScroll() {
+//     const projects = document.querySelectorAll(".project");
+//     const triggerBottom = window.innerHeight * 0.6;
+
+//     projects.forEach(project => {
+//         const rect = project.getBoundingClientRect();
+//         if (rect.top < triggerBottom) {
+//             project.classList.add("visible");
+//         } else {
+//             project.classList.remove("visible");
+//         }
+//     });
+// }
+
+// window.addEventListener("scroll", handleScroll);
+// window.addEventListener("DOMContentLoaded", handleScroll);

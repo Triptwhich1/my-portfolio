@@ -55,11 +55,17 @@ body {
 
 .links a {
   margin-left: 0.4rem;
+  text-decoration: none;
   font-size: var(--link-text);
+  transition: font-weight ease 0.2s;
 }
 
 .link:not(:first-of-type) {
   margin-left: 1rem;
+}
+
+.link:hover {
+  font-weight: 700;
 }
 
 .links img {
@@ -105,7 +111,11 @@ body {
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
   min-height: 12vh;
   border-radius: 8px;
-  transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.4s;
+}
+
+.project.visible {
+  opacity: 1;
 }
 
 .project:hover {
@@ -142,7 +152,7 @@ body {
   opacity: 0;
   overflow: hidden;
   padding: 0;
-  transition: min-height 0.5s ease, max-height 0.5s ease, opacity 0.3s ease,
+  transition: min-height 0.5s ease, max-height 0.5s ease, opacity 0.5s ease,
     padding 0.5s ease;
 }
 
@@ -167,7 +177,7 @@ body {
 }
 
 .project-description.show {
-  min-height: 8rem;
+  min-height: 12rem;
   max-height: 20rem;
   opacity: 1;
   padding: 1rem 0;
