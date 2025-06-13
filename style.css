@@ -19,6 +19,8 @@ body, html, h1, h2, h3, h4, h5, h6, p, span, div, li, a, label, input, button, t
     --text-color: #FFFFFF;
     --title-text-size: 4rem;
     --title-description: 2.4rem;
+    --link-text: 1.7rem;
+    --link-img: 1.8rem;
     /* --hover-color: #; */
 }
 
@@ -38,6 +40,40 @@ body {
 }
 
 .title p {
-    margin-left: 2.4rem;
+    margin-left: 1rem;
     font-size: var(--title-description);
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links a {
+    margin-left: 0.4rem;
+    font-size: var(--link-text);
+}
+
+.link:not(:first-of-type) {
+    margin-left: 1rem;
+}
+
+.links img {
+    width: var(--link-img);
+    height: var(--link-img);
+}
+
+.seperator {
+    font-size: large;
+    margin-left: 0.8rem;
+}
+
+.description {
+    font-size: 2.4rem;
+    margin-top: 3.6rem;
+    width: 30%;
+}
+
+.description p{
+    font-size: 2.4rem;
 }
