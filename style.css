@@ -4,26 +4,6 @@
   box-sizing: border-box;
   font-family: "Segoe UI", "Arial", "Helvetica Neue", sans-serif;
   font-size: 10px;
-}
-
-body,
-html,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span,
-div,
-li,
-a,
-label,
-input,
-button,
-textarea,
-select {
   color: var(--text-color);
 }
 
@@ -124,12 +104,13 @@ body {
   background-color: var(--lighter-bg-color);
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
   min-height: 12vh;
+  border-radius: 8px;
+  transition: ease-in-out 0.2s;
 }
 
 .project:hover {
   scale: 1.01;
   cursor: pointer;
-  transition: ease-in-out 0.2s;
 }
 
 .project-top {
@@ -152,21 +133,42 @@ body {
 .year {
   margin-left: 2.4rem;
   font-size: 1.8rem;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(177, 138, 138, 0.4);
 }
 
 .project-description {
-  font-size: 1.6rem;
   max-height: 0;
   min-height: 0;
   opacity: 0;
   overflow: hidden;
   padding: 0;
-  transition: min-height 0.5s ease, opacity 0.3s ease, padding 0.3s ease;
+  transition: min-height 0.5s ease, max-height 0.5s ease, opacity 0.3s ease,
+    padding 0.5s ease;
+}
+
+.info {
+  display: flex;
+}
+
+.project-description p {
+  font-size: 1.6rem;
+}
+
+.info h1 {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+}
+.info li {
+  font-size: 1.6rem;
+}
+
+.skills {
+  margin-left: 8rem;
 }
 
 .project-description.show {
   min-height: 8rem;
+  max-height: 20rem;
   opacity: 1;
   padding: 1rem 0;
 }
