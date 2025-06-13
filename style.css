@@ -1,146 +1,172 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', sans-serif;
-    font-size: 10px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 10px;
 }
 
-body, html, h1, h2, h3, h4, h5, h6, p, span, div, li, a, label, input, button, textarea, select {
-    color: var(--text-color);
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+li,
+a,
+label,
+input,
+button,
+textarea,
+select {
+  color: var(--text-color);
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
   padding-left: 0;
 }
 
-
 /* ACTUAL CSS FOR THE WEBPAGE */
 
-:root{
-    --bg-color: #2A2525;
-    --lighter-bg-color: #2F2A2A;
-    --text-color: #FFFFFF;
-    --title-text-size: 4rem;
-    --title-description: 2.4rem;
-    --link-text: 1.7rem;
-    --link-img: 1.8rem;
-    /* --hover-color: #; */
+:root {
+  --bg-color: #2a2525;
+  --lighter-bg-color: #2f2a2a;
+  --text-color: #ffffff;
+  --title-text-size: 4rem;
+  --title-description: 2.4rem;
+  --link-text: 1.7rem;
+  --link-img: 1.8rem;
+  /* --hover-color: #; */
 }
 
 body {
-    overflow-x: hidden;
-    background-color: var(--bg-color);
-    margin-left: 10rem;
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+  margin-left: 10rem;
 }
 
 .title {
-    margin-top: 4rem;
-    display: flex;
-    align-items: baseline;
+  margin-top: 4rem;
+  display: flex;
+  align-items: baseline;
 }
 
 .title h1 {
-    font-size: var(--title-text-size);
+  font-size: var(--title-text-size);
 }
 
 .title p {
-    margin-left: 1rem;
-    font-size: var(--title-description);
+  margin-left: 1rem;
+  font-size: var(--title-description);
 }
 
 .links {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .links a {
-    margin-left: 0.4rem;
-    font-size: var(--link-text);
+  margin-left: 0.4rem;
+  font-size: var(--link-text);
 }
 
 .link:not(:first-of-type) {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .links img {
-    width: var(--link-img);
-    height: var(--link-img);
+  width: var(--link-img);
+  height: var(--link-img);
 }
 
 .seperator {
-    font-size: large;
-    margin-left: 0.8rem;
+  font-size: large;
+  margin-left: 0.8rem;
 }
 
 .description {
-    font-size: 2.4rem;
-    margin-top: 3.6rem;
-    width: 30%;
+  font-size: 2.4rem;
+  margin-top: 3.6rem;
+  width: 30%;
 }
 
-.description p{
-    font-size: 2.4rem;
+.description p {
+  font-size: 2.4rem;
 }
 
 /* Projects Section */
 
 .projects {
-    margin-top: 8rem;
-    display: flex;
-    flex-direction: column;
-    width: 85vw;
-    height: 100vh;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  height: 100vh;
 }
 
 .project-section-title {
-    font-weight: 600;
-    font-size: 2.4rem;
+  font-weight: 600;
+  font-size: 2.4rem;
 }
 
 .project {
-    overflow-x: visible;
-    margin-top: 1rem;
-    padding: 2rem 2.5rem;
-    background-color: var(--lighter-bg-color);
-    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.3);
-    min-height: 12vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  overflow-x: visible;
+  margin-top: 1rem;
+  padding: 2rem 2.5rem;
+  background-color: var(--lighter-bg-color);
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
+  min-height: 12vh;
 }
 
 .project:hover {
-    scale: 1.01;
-    transition: ease-in-out 0.2s;
+  scale: 1.01;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
 }
 
 .project-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title-year {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .project-name {
-    font-size: 2rem;
-    font-weight: 600;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .year {
-    margin-left: 2.4rem;
-    font-size: 1.8rem;
-    color: rgba(255, 255, 255, 0.4);
+  margin-left: 2.4rem;
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .project-description {
-    display: none;
-    margin-top: 1.4rem;
-    font-size: 1.6rem;
+  font-size: 1.6rem;
+  max-height: 0;
+  min-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: min-height 0.5s ease, opacity 0.3s ease, padding 0.3s ease;
+}
+
+.project-description.show {
+  min-height: 8rem;
+  opacity: 1;
+  padding: 1rem 0;
 }

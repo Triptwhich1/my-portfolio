@@ -1,6 +1,18 @@
-const project = document.getElementById('project');
-const 
+document.addEventListener("DOMContentLoaded", () => {
+    const projects = document.querySelectorAll(".project");
+    projects.forEach(project => {
+        project.addEventListener("click", () => {
+            console.log("poop");
+            const description = project.querySelector(".project-description");
 
-project.addEventListener('click', () => {
+            description.classList.toggle("show");
 
-})
+            projects.forEach(p => {
+                const desc = p.querySelector(".project-description");
+                if (p !== project) {
+                    desc.classList.remove("show");
+                }
+            });
+        });
+    });
+});
