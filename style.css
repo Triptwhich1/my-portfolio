@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     box-sizing: border-box;
     font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', sans-serif;
     font-size: 10px;
@@ -10,6 +9,12 @@
 body, html, h1, h2, h3, h4, h5, h6, p, span, div, li, a, label, input, button, textarea, select {
     color: var(--text-color);
 }
+
+ul, ol, li {
+  list-style: none;
+  padding-left: 0;
+}
+
 
 /* ACTUAL CSS FOR THE WEBPAGE */
 
@@ -25,6 +30,7 @@ body, html, h1, h2, h3, h4, h5, h6, p, span, div, li, a, label, input, button, t
 }
 
 body {
+    overflow-x: hidden;
     background-color: var(--bg-color);
     margin-left: 10rem;
 }
@@ -84,9 +90,8 @@ body {
     margin-top: 8rem;
     display: flex;
     flex-direction: column;
-    width: 85vw; 
+    width: 85vw;
     height: 100vh;
-    /* background-color: red; */
 }
 
 .project-section-title {
@@ -95,20 +100,26 @@ body {
 }
 
 .project {
+    overflow-x: visible;
     margin-top: 1rem;
     padding: 2rem 2.5rem;
     background-color: var(--lighter-bg-color);
     box-shadow: 0 4px 16px 0 rgba(0,0,0,0.3);
-    min-height: 20vh;
+    min-height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project:hover {
+    scale: 1.01;
+    transition: ease-in-out 0.2s;
 }
 
 .project-top {
     display: flex;
     justify-content: space-between;
-}
-
-.project-top i {
-    align-items: end;
+    align-items: center;
 }
 
 .title-year {
@@ -129,6 +140,7 @@ body {
 }
 
 .project-description {
+    display: none;
     margin-top: 1.4rem;
     font-size: 1.6rem;
 }
