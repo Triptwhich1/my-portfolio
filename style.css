@@ -109,7 +109,7 @@ body {
   padding: 2rem 2.5rem;
   background-color: var(--lighter-bg-color);
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
-  min-height: 12vh;
+  min-height: 10rem;
   border-radius: 8px;
   transition: ease-in-out 0.4s;
 }
@@ -177,7 +177,7 @@ body {
 }
 
 .project-description.show {
-  min-height: 12rem;
+  min-height: 10rem;
   max-height: 20rem;
   opacity: 1;
   padding: 1rem 0;
