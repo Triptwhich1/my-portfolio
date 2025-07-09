@@ -24,13 +24,76 @@ li {
   --title-description: 2.4rem;
   --link-text: 1.7rem;
   --link-img: 1.8rem;
-  /* --hover-color: #; */
+  --year-color: rgba(177, 138, 138, 0.4);
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --theme-btn-bg: var(--lighter-bg-color);
+  --theme-btn-hover: #3a3535;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --lighter-bg-color: #f5f5f5;
+  --text-color: #333333;
+  --year-color: rgba(100, 100, 100, 0.6);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --theme-btn-bg: #e0e0e0;
+  --theme-btn-hover: #d0d0d0;
+}
+
+/* Catppuccin Theme (Mocha) */
+[data-theme="catppuccin"] {
+  --bg-color: #1e1e2e;
+  --lighter-bg-color: #313244;
+  --text-color: #cdd6f4;
+  --year-color: rgba(166, 173, 200, 0.6);
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --theme-btn-bg: #45475a;
+  --theme-btn-hover: #585b70;
+}
+
+.theme-switcher {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+.theme-btn {
+  background-color: var(--theme-btn-bg);
+  border: none;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.theme-btn:hover {
+  background-color: var(--theme-btn-hover);
+  transform: scale(1.1);
+}
+
+.theme-btn i {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  transition: all 0.3s ease;
 }
 
 body {
   overflow-x: hidden;
   background-color: var(--bg-color);
   margin-left: 10rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+body.theme-loaded {
+  opacity: 1;
 }
 
 .title {
@@ -108,7 +171,7 @@ body {
   margin-top: 1rem;
   padding: 2rem 2.5rem;
   background-color: var(--lighter-bg-color);
-  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 16px 0 var(--shadow-color);
   min-height: 10rem;
   border-radius: 8px;
   transition: ease-in-out 0.4s;
@@ -143,7 +206,7 @@ body {
 .year {
   margin-left: 2.4rem;
   font-size: 1.8rem;
-  color: rgba(177, 138, 138, 0.4);
+  color: var(--year-color);
 }
 
 .project-description {
@@ -177,8 +240,7 @@ body {
 }
 
 .project-description.show {
-  min-height: 10rem;
   max-height: 20rem;
   opacity: 1;
-  padding: 1rem 0;
+  padding-top: 1rem;
 }
