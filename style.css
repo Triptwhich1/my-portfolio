@@ -142,7 +142,8 @@ body.theme-loaded {
   height: var(--link-img);
 }
 
-[data-theme="light"] .links img { /* Changes the colour of linked in and github without switching image*/
+[data-theme="light"] .links img {
+  /* Changes the colour of linked in and github without switching image*/
   filter: invert(0.8) grayscale(1) contrast(1.2);
 }
 
@@ -231,10 +232,37 @@ body.theme-loaded {
 
 .info {
   display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.contributions,
+.tech-stack {
+  min-width: 220px;
+}
+
+.tech-stack h1 {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+}
+
+.tech-stack li {
+  font-size: 1.6rem;
 }
 
 .project-description p {
   font-size: 1.6rem;
+}
+
+.project-description p a {
+  font-size: 1.6rem;
+  text-decoration: underline;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.project-description p a:hover {
+  color: #c61a09;
 }
 
 .info h1 {
@@ -248,9 +276,9 @@ body.theme-loaded {
 .skills {
   margin-left: 8rem;
 }
-
+  
 .project-description.show {
-  max-height: 20rem;
+  max-height: 40rem;
   opacity: 1;
   padding-top: 1rem;
 }
