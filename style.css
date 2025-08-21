@@ -276,9 +276,108 @@ body.theme-loaded {
 .skills {
   margin-left: 8rem;
 }
-  
+
 .project-description.show {
   max-height: 40rem;
   opacity: 1;
   padding-top: 1rem;
+}
+
+@media (max-width: 800px) {
+  :root {
+    --title-text-size: 3rem;
+    --title-description: 1.8rem;
+    --link-text: 1.4rem;
+    --link-img: 1.6rem;
+  }
+
+  body {
+    margin-left: 0;
+    padding: 2rem;
+  }
+
+  .theme-switcher {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin-top: 2rem;
+  }
+
+  .title h1 {
+    font-size: var(--title-text-size);
+  }
+
+  .title p {
+    margin-left: 0;
+    font-size: var(--title-description);
+  }
+
+  .links {
+    margin-top: 0.4rem;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .links a {
+    font-size: var(--link-text);
+  }
+
+  .description {
+    width: 100%;
+    font-size: 1.8rem;
+    margin-top: 1.6rem;
+  }
+
+  .projects {
+    width: 100%;
+    margin-top: 3rem;
+    height: auto;
+  }
+
+  .project {
+    padding: 1rem;
+    min-height: auto;
+    border-radius: 6px;
+  }
+
+  .project-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .title-year {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .info {
+    gap: 1.2rem;
+    flex-direction: column;
+  }
+
+  .contributions,
+  .tech-stack {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .skills {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .project-description.show {
+    max-height: 80rem;
+  }
+
+  .links img {
+    width: var(--link-img);
+    height: var(--link-img);
+  }
 }
