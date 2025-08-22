@@ -188,6 +188,10 @@ body.theme-loaded {
   transition: ease-in-out 0.4s;
 }
 
+.project:not(:first-of-type) p {
+  margin-top: 1em;
+}
+
 .project.visible {
   opacity: 1;
 }
