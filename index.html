@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -44,6 +44,64 @@
         </p>
       </div>
     </div>
+    <div class="projects">
+      <h1 class="project-section-title">Projects</h1>
+      <ul>
+        <li class="project">
+          <div class="project-top">
+            <div class="title-year">
+              <h1 class="project-name">
+                University Major Project/ESP32 Smart Energy monitoring system
+              </h1>
+              <h1 class="year">2026</h1>
+            </div>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="project-description">
+            <p>
+              The project that I am working on is a smart energy monitoring
+              system for households on the ESP32. This project is essentially
+              about finding the “best” times to use electricity within a period
+              of a 24/48hrs, in user set increments. To find these times, data
+              from two API’s will be processed, the API’s being
+              <a
+                href="https://docs.octopus.energy/rest/guides/endpoints/#api-price-endpoints"
+                >octopus’ dynamic pricing</a
+              >
+              and the
+              <a href="https://carbonintensity.org.uk/">carbon emissions API</a
+              >. The data gained from these API’s are cost of energy per kwh and
+              carbon emissions per kwh. By using this information, the user can
+              select which is more important to them and then the several best
+              times will be displayed in an easy-to-understand graph.
+            </p>
+            <div class="info">
+              <div class="tech-stack">
+                <h1>Tech Stack</h1>
+                <ul>
+                  <li>ESP-32</li>
+                  <li>C++</li>
+                  <li>ESP-IDF</li>
+                  <li><a href="https://www.freertos.org/">freeRTOS</a></li>
+                  <li>Embedded Systems</li>
+                </ul>
+              </div>
+              <div class="tech-stack">
+                <h1>Libaries Used</h1>
+                <ul>
+                  <li>esp-wifi (Espressifs Wifi Stack)</li>
+                  <li>cJSON</li>
+                  <li>esp-sntp</li>
+                  <li>esp-http (Espressifs HTTP Request)</li>
+                  <li><a href="https://lvgl.io/">lvgl</a></li>
+                  <li>
+                    <a href="https://squareline.io/">Squareline Studio</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
 
         <li class="project">
           <div class="project-top">

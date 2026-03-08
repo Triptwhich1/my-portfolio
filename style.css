@@ -230,7 +230,10 @@ body.theme-loaded {
   opacity: 0;
   overflow: hidden;
   padding: 0;
-  transition: min-height 0.5s ease, max-height 0.5s ease, opacity 0.5s ease,
+  transition:
+    min-height 0.5s ease,
+    max-height 0.5s ease,
+    opacity 0.5s ease,
     padding 0.5s ease;
 }
 
@@ -252,6 +255,16 @@ body.theme-loaded {
 
 .tech-stack li {
   font-size: 1.6rem;
+}
+
+.tech-stack a {
+  font-size: 1.6rem;
+  text-decoration: underline;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+.tech-stack a:hover {
+  color: #c61a09;
 }
 
 .project-description p {
