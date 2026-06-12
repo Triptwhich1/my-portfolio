@@ -169,7 +169,7 @@ body.theme-loaded {
   display: flex;
   flex-direction: column;
   width: 85vw;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .project-section-title {
@@ -235,6 +235,10 @@ body.theme-loaded {
     max-height 0.5s ease,
     opacity 0.5s ease,
     padding 0.5s ease;
+}
+
+.project-description p {
+  margin-bottom: 1em;
 }
 
 .info {
