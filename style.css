@@ -263,6 +263,7 @@ body.theme-loaded {
   font-weight: 400;
   transition: color 0.2s;
 }
+
 .tech-stack a:hover {
   color: #c61a09;
 }
