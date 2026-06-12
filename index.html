@@ -59,12 +59,10 @@
           </div>
           <div class="project-description">
             <p>
-              This project is a GPS route recorder to be used on an ESP32 microcontroller, 
-              written entirely in C++ with OOP principles, using the ESP-IDF framework. The firmware obtains information from a 
-              UART-connected GPS module, parses raw NMEA 0183 sentences in real time (including coordinate conversion from degrees-minutes to decimal degrees), 
-              and records waypoints into a structured route object. This application uses FreeRTOS for concurrent task management, 
-              with a message queue safely connecting the GPS receiver task and the route-writing task. 
-              The codebase is structured as a modular ESP-IDF component system.
+              Developed a GPS route recorder on ESP32 using ESP-IDF and FreeRTOS. 
+              Implemented UART-based NMEA parser supporting GPGGA and GPGLL messages, coordinate conversion,
+              and inter-task communication via FreeRTOS queues. Firmware processes GPS data in real time and
+              stores routes as structured waypoint objects. Built without external parsing libraries.
             </p>
             <div class="info">
               <div class="tech-stack">
@@ -78,10 +76,17 @@
                 </ul>
               </div>
               <div class="tech-stack">
-                <h1>Libaries Used</h1>
+                <h1>Libraries Used</h1>
                 <ul>
                   <li>No external libraries used</li>
                 </ul>
+              </div>
+              <div class="tech-stack">
+                <h1>Link</h1>
+                <ul>
+                  <li><a href="https://github.com/Triptwhich1/esp-gps-program">GitHub Repository</a></li>
+                </ul>
+              </div>
               </div>
             </div>
           </div>
@@ -123,7 +128,7 @@
               Employed
               ways of making API data more efficient by running self hosted
               microservice utilising Python and fastAPI which reduced number of
-              bytes recieved by 70.8% (Essential for embedded systems with
+              bytes received by 70.8% (Essential for embedded systems with
               limited RAM)
             </p>
             <div class="info">
@@ -140,7 +145,7 @@
                 </ul>
               </div>
               <div class="tech-stack">
-                <h1>Libaries Used</h1>
+                <h1>Libraries Used</h1>
                 <ul>
                   <li>esp-wifi (Espressifs Wifi Stack)</li>
                   <li>cJSON</li>
@@ -344,7 +349,7 @@
                 <h1>My Contributions</h1>
                 <ul>
                   <li>Guided the design process</li>
-                  <li>Incorperated stakeholders feedback</li>
+                  <li>Incorporated stakeholders feedback</li>
                   <li>Presented my work to an audience of 100+ people</li>
                   <li>Designed mockups, logos and presentations</li>
                   <li>User research</li>
